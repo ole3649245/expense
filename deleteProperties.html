@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let user = {
+            name:"Ole",
+            age:32,
+            height :155, // add on
+            isSingle:true,
+           
+        };
+        delete (user.height) //ส่วนสูงหายไปแน้ว
+        alert(user.age );//32
+        alert(user.name );//Ole
+        console.log(user.height); //155
+        console.log(user.isSingle); //true
+    </script>
+</body>
+</html>
