@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primitiveแยกค่าถ้าถูกแก้ค่าจะแก้ตัวเดียว</title>
+</head>
+<body> 
+    <script> //object
+        let user ={ name: "Ole" };
+        let admin = user;
+        admin.name = "Olenatthawan" //change admin.name
+        alert(user.name); //alert Olenatthawan,cause this change up line
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functionการรวมของObject</title>
+</head>
+<body>
+    <script> //ถ้ามีตัวซ้ำ อันล่างสุดคืออันที่จะแสดง
+        let obj1 = {
+    name:"Ole"
+}
+/* 
+obj2+obj3={
+    name:"Ole365",
+    age:32,
+    address:"Non"
+}
+*/
+let obj2 ={
+    name :"Ole2415",
+    age:32
+}
+let obj3 ={
+    name:"Ole365",
+    address:"Non"
+} //ตัวหลังสุด อยู่รอด
+let obj4 = Object.assign(obj1,obj2,obj3)
+console.log(obj4) //obj4 address: "Non" ,age: 32,name: "Ole365"
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+    name:"Ole",
+    age:32,
+    address:"Pakkret",
+    skill:"JS"
+}
+    for (let key in user) {
+        console.log(key) // ตัวแปรชื่อ key จะเป็นตัวแทนของ key ทั้งหมดใน object
+        alert(key) // key = name ,age ,address, skill
+        alert(user[key]) //value = Ole,32,Pakkret,JS
+        console.log(`key:${key},value:${user[key]}`) /*
+        key:name,value:Ole 
+        key:age,value:32 
+        key:address,value:Pakkret 
+        key:skill,value:JS 
+        */
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy & merg</title>
+</head>
+<body>
+    <script>
+        let user = {
+    name:"Ole",
+    age:32,
+    skill:"JS"
+}
+let admin = {};
+for(let key in user) {   //คือการcopy
+    admin[key] = user[key] //คือการcopy
+}
+    console.log(user)
+    delete user.age;
+    </script>
+</body>
+</html>

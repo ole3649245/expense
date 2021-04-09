@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key in obj</title>
+</head>
+<body>
+    <script>
+        let user = { name:"Ole",age: 32,gender:"female" };
+
+        alert("age" in user ); //แสดงผลเป็น boolean อะ true
+        alert("blabla" in user); // false/ dont have key name blabla in object
+        alert("gender" in user); // true
+    </script>
+</body>
+</html>
