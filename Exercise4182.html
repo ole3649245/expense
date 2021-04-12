@@ -12,10 +12,18 @@
         และเช็คฟังชั่นว่ามี obj นี้มี properties ไหม ถ้ามี true ไม่มี false
         */
         function isEmpty(obj) {
-            for(let key in obj){
-                return false
+            for(let key in obj){ //ถ้า function เข้ามาใน obj ไม่ว่างเพราะมี keyอยู่ข้างใน
+                return false // บรรทัดนี้เลยเป็น false
             }
+            return true
         }
+        let obj = {}
+        isEmpty(obj)
+
+        let obj = {
+            name:"ole" // มี Oleใน obj แล้ว ไม่ว่างเป็น false
+        };
+        
     </script>
 </body>
 </html>
