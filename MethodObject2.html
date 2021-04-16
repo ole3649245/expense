@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thai ขึ้นอยู่กับตัวที่เก็บ object ปัจจุบัน</title>
+</head>
+<body>
+    <script>
+        let user = { name: "John" };
+        let admin = { name: "Admin" };
+
+        function sayHi() {
+        alert( this.name );
+}
+
+// ใส่ function sayHi ไปให้ทั้งสอง Object
+    user.sayHi = sayHi;
+    admin.sayHi = sayHi;
+
+// การเรียกฟังก์ชันทั้งสองครั้งนี้ this จะแตกต่างกัน
+    user.sayHi(); // John  (this จะหมายถึง user)
+    admin.sayHi(); // Admin  (this จะหมายถึง admin)
+
+    admin['sayHi'](); // Admin (dot หรือ square brackets ก็ได้)
+
+    </script>
+</body>
+</html>

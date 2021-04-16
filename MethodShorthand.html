@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิธีเขียน shorthand</title>
+</head>
+<body>
+    <script>
+        function sayHi(){
+    console.log("Hi");
+}
+
+let user = {
+    name: "Ole",
+    sayHi /* : function sayHi(){
+    console.log("Hi");
+} */                              //function จะมาอยู่ในบรรทัดนี้
+}
+console.log(user)
+
+
+//or
+user = {
+    sayHi: function() {
+        console.log("Hiyaaa");
+    }
+}
+// เขียนแบบนี้ได้ด้วย แบบย่อ
+user = {
+    sayHi() {
+    console.log("Haiii")
+    }
+}
+
+    </script>
+</body>
+</html>
